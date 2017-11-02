@@ -15,14 +15,14 @@ namespace DoctorsWardrobe.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Welcome to the TARDIS!";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact the Human Developer";
 
             return View();
         }
