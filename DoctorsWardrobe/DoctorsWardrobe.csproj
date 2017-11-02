@@ -130,7 +130,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccessoriesController.cs" />
+    <Compile Include="Controllers\BottomsController.cs" />
+    <Compile Include="Controllers\ColorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NeckWearsController.cs" />
+    <Compile Include="Controllers\OccasionsController.cs" />
+    <Compile Include="Controllers\OuterWearsController.cs" />
+    <Compile Include="Controllers\SeasonsController.cs" />
+    <Compile Include="Controllers\TopsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,6 +151,7 @@
     <Compile Include="Models\Color.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\DoctorsWardrobeContext.cs" />
     <Compile Include="Models\NeckWear.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
@@ -227,6 +236,46 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Accessories\Create.cshtml" />
+    <Content Include="Views\Accessories\Delete.cshtml" />
+    <Content Include="Views\Accessories\Details.cshtml" />
+    <Content Include="Views\Accessories\Edit.cshtml" />
+    <Content Include="Views\Accessories\Index.cshtml" />
+    <Content Include="Views\Bottoms\Create.cshtml" />
+    <Content Include="Views\Bottoms\Delete.cshtml" />
+    <Content Include="Views\Bottoms\Details.cshtml" />
+    <Content Include="Views\Bottoms\Edit.cshtml" />
+    <Content Include="Views\Bottoms\Index.cshtml" />
+    <Content Include="Views\Colors\Create.cshtml" />
+    <Content Include="Views\Colors\Delete.cshtml" />
+    <Content Include="Views\Colors\Details.cshtml" />
+    <Content Include="Views\Colors\Edit.cshtml" />
+    <Content Include="Views\Colors\Index.cshtml" />
+    <Content Include="Views\NeckWears\Create.cshtml" />
+    <Content Include="Views\NeckWears\Delete.cshtml" />
+    <Content Include="Views\NeckWears\Details.cshtml" />
+    <Content Include="Views\NeckWears\Edit.cshtml" />
+    <Content Include="Views\NeckWears\Index.cshtml" />
+    <Content Include="Views\Occasions\Create.cshtml" />
+    <Content Include="Views\Occasions\Delete.cshtml" />
+    <Content Include="Views\Occasions\Details.cshtml" />
+    <Content Include="Views\Occasions\Edit.cshtml" />
+    <Content Include="Views\Occasions\Index.cshtml" />
+    <Content Include="Views\OuterWears\Create.cshtml" />
+    <Content Include="Views\OuterWears\Delete.cshtml" />
+    <Content Include="Views\OuterWears\Details.cshtml" />
+    <Content Include="Views\OuterWears\Edit.cshtml" />
+    <Content Include="Views\OuterWears\Index.cshtml" />
+    <Content Include="Views\Seasons\Create.cshtml" />
+    <Content Include="Views\Seasons\Delete.cshtml" />
+    <Content Include="Views\Seasons\Details.cshtml" />
+    <Content Include="Views\Seasons\Edit.cshtml" />
+    <Content Include="Views\Seasons\Index.cshtml" />
+    <Content Include="Views\Tops\Create.cshtml" />
+    <Content Include="Views\Tops\Delete.cshtml" />
+    <Content Include="Views\Tops\Details.cshtml" />
+    <Content Include="Views\Tops\Edit.cshtml" />
+    <Content Include="Views\Tops\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
