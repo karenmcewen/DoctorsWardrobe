@@ -4,22 +4,14 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Bottoms</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New Bottom", "Create")
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Color.ColorFamily)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </th>
+       
         <th>
             @Html.DisplayNameFor(model => model.BottomName)
         </th>
@@ -29,20 +21,21 @@
         <th>
             @Html.DisplayNameFor(model => model.BottomType)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color.ColorFamily)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Occasion.OccasionType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Season.SeasonName)
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color.ColorFamily)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occasion.OccasionType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.SeasonName)
-        </td>
+       
         <td>
             @Html.DisplayFor(modelItem => item.BottomName)
         </td>
@@ -51,6 +44,15 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.BottomType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color.ColorFamily)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Occasion.OccasionType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Season.SeasonName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.BottomID }) |
