@@ -25,7 +25,10 @@ namespace DoctorsWardrobe
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+<<<<<<< HEAD
                       //"~/Content/bootstrap_Cyborg.css",
+=======
+>>>>>>> parent of 034b712... added table for outfit
                       "~/Content/site.css"));
         }
     }

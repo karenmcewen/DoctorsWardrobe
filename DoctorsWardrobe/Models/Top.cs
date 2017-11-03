@@ -14,12 +14,6 @@ namespace DoctorsWardrobe.Models
     
     public partial class Top
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Top()
-        {
-            this.Outfits = new HashSet<Outfit>();
-        }
-    
         public int TopID { get; set; }
         public string TopName { get; set; }
         public string TopPhotoURL { get; set; }
@@ -31,7 +25,5 @@ namespace DoctorsWardrobe.Models
         public virtual Color Color { get; set; }
         public virtual Occasion Occasion { get; set; }
         public virtual Season Season { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Outfit> Outfits { get; set; }
     }
 }
