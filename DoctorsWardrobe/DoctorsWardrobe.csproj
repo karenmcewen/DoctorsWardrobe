@@ -161,6 +161,9 @@
     <Compile Include="Models\OuterWear.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Outfit.cs">
+      <DependentUpon>Wardrobe.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Season.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
@@ -280,6 +283,11 @@
     <Content Include="Views\Tops\Details.cshtml" />
     <Content Include="Views\Tops\Edit.cshtml" />
     <Content Include="Views\Tops\Index.cshtml" />
+    <Content Include="Views\Outfits\Create.cshtml" />
+    <Content Include="Views\Outfits\Delete.cshtml" />
+    <Content Include="Views\Outfits\Details.cshtml" />
+    <Content Include="Views\Outfits\Edit.cshtml" />
+    <Content Include="Views\Outfits\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
