@@ -172,19 +172,19 @@
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Wardrobe.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Wardrobe.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\Wardrobe.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Wardrobe.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\Wardrobe.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Wardrobe.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -205,24 +205,20 @@
     <Content Include="Images\coat10.jpg" />
     <Content Include="Images\coat9.jpg" />
     <Content Include="Models\Wardrobe.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Wardrobe.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Wardrobe.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Wardrobe.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
+    <Content Include="Models\Wardrobe.edmx.diagram">
       <DependentUpon>Wardrobe.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Wardrobe.tt">
+      <DependentUpon>Wardrobe.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Wardrobe.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Wardrobe.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Wardrobe.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Wardrobe.edmx.diagram">
-      <DependentUpon>Wardrobe.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -308,6 +304,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\Wardrobe.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Wardrobe.Designer.cs</LastGenOutput>
+    </EntityDeploy>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
