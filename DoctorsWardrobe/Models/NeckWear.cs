@@ -14,6 +14,12 @@ namespace DoctorsWardrobe.Models
     
     public partial class NeckWear
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public NeckWear()
+        {
+            this.Outfits = new HashSet<Outfit>();
+        }
+    
         public int NeckWearID { get; set; }
         public string NeckWearName { get; set; }
         public string NeckWearPhotoURL { get; set; }
@@ -25,5 +31,7 @@ namespace DoctorsWardrobe.Models
         public virtual Color Color { get; set; }
         public virtual Occasion Occasion { get; set; }
         public virtual Season Season { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Outfit> Outfits { get; set; }
     }
 }

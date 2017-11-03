@@ -33,5 +33,6 @@ namespace DoctorsWardrobe.Models
         public virtual DbSet<OuterWear> OuterWears { get; set; }
         public virtual DbSet<Season> Seasons { get; set; }
         public virtual DbSet<Top> Tops { get; set; }
+        public virtual DbSet<Outfit> Outfits { get; set; }
     }
 }

@@ -34,5 +34,7 @@ namespace DoctorsWardrobe.Models
         public System.Data.Entity.DbSet<DoctorsWardrobe.Models.OuterWear> OuterWears { get; set; }
 
         public System.Data.Entity.DbSet<DoctorsWardrobe.Models.Top> Tops { get; set; }
+
+        public System.Data.Entity.DbSet<DoctorsWardrobe.Models.Outfit> Outfits { get; set; }
     }
 }

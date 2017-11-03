@@ -14,6 +14,12 @@ namespace DoctorsWardrobe.Models
     
     public partial class Accessory
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Accessory()
+        {
+            this.Outfits = new HashSet<Outfit>();
+        }
+    
         public int AccessoryID { get; set; }
         public string AccessoryName { get; set; }
         public string AccessoryPhotoURL { get; set; }
@@ -25,5 +31,7 @@ namespace DoctorsWardrobe.Models
         public virtual Color Color { get; set; }
         public virtual Occasion Occasion { get; set; }
         public virtual Season Season { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Outfit> Outfits { get; set; }
     }
 }

@@ -28,6 +28,12 @@
         <AssociationConnector Association="DoctorsWardrobeModel.FK_Top_Occasion" ManuallyRouted="false" />
         <AssociationConnector Association="DoctorsWardrobeModel.FK_OuterWear_Season" ManuallyRouted="false" />
         <AssociationConnector Association="DoctorsWardrobeModel.FK_Top_Season" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DoctorsWardrobeModel.Outfit" Width="1.5" PointX="8.25" PointY="0.5" />
+        <AssociationConnector Association="DoctorsWardrobeModel.FK_Outfit_Accessory" />
+        <AssociationConnector Association="DoctorsWardrobeModel.FK_Outfit_Bottom" />
+        <AssociationConnector Association="DoctorsWardrobeModel.FK_Outfit_NeckWear" />
+        <AssociationConnector Association="DoctorsWardrobeModel.FK_Outfit_OuterWear" />
+        <AssociationConnector Association="DoctorsWardrobeModel.FK_Outfit_Top" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
